@@ -1,3 +1,4 @@
-# precc
+precc
+=====
 
 pre-processor for coffeescript
