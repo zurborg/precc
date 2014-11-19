@@ -1,0 +1,12 @@
+*~
+*.js
+package.json
+.*.swp
+._*
+.DS_Store
+.lock-wscript
+.wafpickle-*
+npm-debug.log
+node_modules/
+bin/
+lib/

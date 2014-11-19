@@ -1,0 +1,22 @@
+---
+name: precc
+version: 0.1.0
+description: pre-processor for coffeescript
+keywords:
+  - pre-processor
+  - coffeescript
+homepage: https://github.com/zurborg/precc
+bugs:
+  url: https://github.com/zurborg/precc/issues
+license: ISC
+author: David Zurborg <post@david-zurb.org>
+files: ~
+main: lib/precc.js
+repository:
+  type: git
+  url: https://github.com/zurborg/precc.git
+dependencies:
+  condvar: >=0.0.5
+engines:
+  node: ~0.10
+bin: ./bin/precc
