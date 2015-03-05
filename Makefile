@@ -1,5 +1,7 @@
 targets=bin/precc
 
+all: $(targets) package.json
+
 lib/%.js: src/%.coffee
 	mkdir -p lib
 	coffee -sc < $< > $@
@@ -12,8 +14,6 @@ bin/%: lib/%.js
 
 %.json: %.yml
 	yaml2json $< > $@
-
-all: $(targets) package.json
 
 clean:
 	git clean -xdf
