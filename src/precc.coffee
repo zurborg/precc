@@ -1,4 +1,4 @@
-condvar = require 'condvar'
+cvar = require 'cvar'
 fs = require 'fs'
 path = require 'path'
 
@@ -14,7 +14,7 @@ String::repeat = (n) ->
 
 readall = (stream) ->
   buf = ''
-  cv = new condvar
+  cv = new cvar
   stream.on 'end', ->
     cv.send buf
   stream.on 'readable', ->
