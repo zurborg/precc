@@ -2,7 +2,9 @@ condvar = require 'condvar'
 fs = require 'fs'
 path = require 'path'
 
-print = (line, encoding = 'utf8') -> process.stdout.write line, encoding
+target = process.stdout
+
+print = (line, encoding = 'utf8') -> target.write line, encoding
 say = (str) -> print "#{str}\n"
 
 String::repeat = (n) ->
